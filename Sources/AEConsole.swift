@@ -49,6 +49,7 @@ open class AEConsole: AELogDelegate {
             AELog.launch(with: shared)
             shared.appDelegate = appDelegate
             shared.brain.configureConsole(with: appDelegate)
+            shared.activateConsoleUI()
         }
     }
     
